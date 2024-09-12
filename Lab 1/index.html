@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="registrationForm">
+            <h2>Registration Form</h2>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{3,15}" title="Username should be 3-15 characters long, alphanumeric only">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" title="Password must be at least 8 characters long">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required title="Please enter a valid email address">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female" required> Female
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="gender" value="other" required> Other
+                </label>
+            </div>
+
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <label for="coding">
+                    <input type="checkbox" id="coding" name="interests" value="coding"> Coding
+                </label>
+                <label for="music">
+                    <input type="checkbox" id="music" name="interests" value="music"> Music
+                </label>
+                <label for="sports">
+                    <input type="checkbox" id="sports" name="interests" value="sports"> Sports
+                </label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
