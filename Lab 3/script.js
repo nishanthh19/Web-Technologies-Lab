@@ -13,7 +13,6 @@ const questions = [
         answers: ["3", "4", "5"],
         correct: "4"
     }
-    // Add more questions as needed
 ];
 
 let currentQuestionIndex = 0;
@@ -39,7 +38,6 @@ function loadQuestion(index) {
         </div>
     `;
 
-    // Apply fade-in animation
     const questionElement = container.querySelector('.fade-out');
     questionElement.classList.remove('fade-out');
     questionElement.classList.add('fade-in');
@@ -53,6 +51,4 @@ document.getElementById('next-button').addEventListener('click', () => {
         document.getElementById('quiz-container').innerHTML = '<h2>Quiz Complete!</h2>';
     }
 });
-
-// Load the first question initially
 loadQuestion(currentQuestionIndex);
