@@ -1,10 +1,9 @@
 <?php
-$host = 'localhost'; // Your MySQL host
-$db = 'event_db';    // Your database name
-$user = 'root';      // Your MySQL username
-$pass = '';          // Your MySQL password
-$port = '3306';      // Default MySQL port
-
+$host = 'localhost';
+$db = 'event_db';   
+$user = 'root';      
+$pass = '';          
+$port = '3306';      
 try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
